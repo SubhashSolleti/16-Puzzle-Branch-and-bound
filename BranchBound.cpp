@@ -209,6 +209,28 @@ int main()
                     }
                 }
             }
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    cout << initial2[i][j] << " ";
+                }
+                cout << endl;
+            }
+            printf("\tYour Puzzle is Solving ...");
+
+            for (int i = 0; i < 3; i++)
+            {
+
+                delay(2);
+                printf("..");
+                delay(2);
+                printf("\b!\b");
+                printf("\b!\b");
+                printf("\b!\b");
+            }
+            system("cls");
+            cout << "The Puzzle is solved!" << endl;
             solve(initial2, x, y, final);
         }
         break;
